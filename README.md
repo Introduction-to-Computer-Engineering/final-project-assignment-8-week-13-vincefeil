@@ -51,4 +51,24 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  ## Write a short program to read a number from the I2C devices on the microbit.
  
  1. Try all three addresses (Bonus for a cogent argument about why there are three).
-    There are three addresses because there are three different variations of the micribit that have three different on board device variations that have three different addresses. 
+    There are three addresses because there are three different variations of the micribit that have three different on board device         variations that have three different addresses. 
+    
+    First address 0x0E [picture](https://drive.google.com/open?id=1M9PU8JH9z0kdQATXo6VoWUHaLp_WAQRv) shows the display of 0 and the         address frame with no data following it.
+    
+    Second address 0x1D [picture](https://drive.google.com/open?id=1OREOn6xoAd49MGPnvXb3J7_Of0VDhs6H) similarly there is an address         frame with no data. Close inspection shows a slight difference in the address frame from the frame of 0x0E.
+    
+    Third address 0x1E magnetometer. First video shows the microbit pointing South West [video](https://drive.google.com/open?               id=1OEdO2dAZcdWf63bwZICcT_USobOLy1Ax). Second video shows microbit pointing North West [video](https://drive.google.com/open?           id=1OFdYA520tmhLvIPZZNfp18_QBmCQAG1W). You can see two sets of clock cycles and this shows where the address and data frames are         seperated. you can also see a difference in the microbit displays and the data frames from when the microbit is pointed South West       and when it is pointed North West.
+    
+ 2. Try signed and unsigned single bite integers.
+ 
+    First I did a read at address 0x19 with signed integers [picture](https://drive.google.com/open?id=1OOxYeCEbrIfCNzfROyCzDXBW15-         LJPtx) then with an unsigned interger. The reading on the microbit changed from -128 to 128 but, I was un able to detect the             difference in the data frame.
+    
+3. Scrole the values on the LED matrix.
+
+4. What values did you read?
+
+   With unsigned integers I got -128 and with signed I got 128. This is the data that is being read from the sensor.
+   
+5. Can you get different values by moving the microbit arround?
+
+   Yes this was demonstrated above when the readings came from the magnetometer.

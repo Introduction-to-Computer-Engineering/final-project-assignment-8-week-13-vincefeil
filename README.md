@@ -35,3 +35,20 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  5. What is the most appropriate trigger for capturing an I2C frame on the oscilloscope?
  
     It is best to trigger on the address frame. 
+    
+ # First steps with I2C
+ 
+ ## In a loop configure the microbit to write to an arbitrary I2C address.
+ 
+ 1. What frame did you capture? 
+ 
+    The frame captured was the address frame. The data frame is missing. Since there is no acknowledge the microbit does not send data.     To prove there I wrote the same data to two adresses. In the pucture you can see the differences. I wrote to address 0x33               data 2056. [picture](https://drive.google.com/open?id=1MO4j2DVavOOopLI2WoWB74jDm51NRnnz) and address 0x1F data 2056 [picture]           (https://drive.google.com/open?id=1MX87x9fjfo8W_xH09E54W0coafCq9GV1)
+    
+ 2. What does the write function do if there is nothing connected? It sends out the address and waits for an acknowledge. With nothing       attached it gets no acknowledge and does not send data.
+ 
+ 3. Is there a difference in what you capture if you write to an internal address? Yes, the microbit gets an acknowledge when it writes     to an internal address and then sends data. You can clearly see the address and data frames in the pictures. To prove this I first       did a write to address 0x19 with data 1 [picture](https://drive.google.com/open?id=1N7hwyeswLbazN_a0vw7XtoMJg4U0DY1G) and then to       address 0x19 data 2056 [picture](https://drive.google.com/open?id=1Miwu5Cjre_zt5eFwpb7wNkC4e4HAYzo3). You can see a difference in       the data frame between the two pictures.
+    
+ ## Write a short program to read a number from the I2C devices on the microbit.
+ 
+ 1. Try all three addresses (Bonus for a cogent argument about why there are three).
+    There are three addresses because there are three different variations of the micribit that have three different on board device variations that have three different addresses. 

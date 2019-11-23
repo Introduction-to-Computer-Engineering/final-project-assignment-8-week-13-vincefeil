@@ -108,6 +108,9 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     First I did a read at address 0x19 with signed integers 
     [picture](https://drive.google.com/open?id=1OOxYeCEbrIfCNzfROyCzDXBW15-LJPtx) then with an unsigned interger. The reading on the         microbit changed from -128 to 128 but, I was unable to detect the difference in the data frame.
     
+    image read 0x19:
+    ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cRead0x19.jpg)
+    
 3. Scrole the values on the LED matrix.
 
 4. What values did you read?

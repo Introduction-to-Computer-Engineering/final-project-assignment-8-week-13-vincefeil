@@ -72,6 +72,8 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  
  3. Is there a difference in what you capture if you write to an internal address? Yes, the microbit gets an acknowledge when it writes     to an internal address and then sends data. You can clearly see the address and data frames in the pictures. To prove this I first       did a write to address 0x19 with data 1 [picture](https://drive.google.com/open?id=1N7hwyeswLbazN_a0vw7XtoMJg4U0DY1G) and then to       address 0x19 data 2056 [picture](https://drive.google.com/open?id=1Miwu5Cjre_zt5eFwpb7wNkC4e4HAYzo3). You can see a difference in       the data frame between the two pictures. In this video i was able to capture the address and data changing while writing two             different ones in the same program. [video](https://drive.google.com/open?id=1P7KaY7ZxxqpQao7aZr4rb67UnLp4D58z)
  
+    file: [i2cWrite.js](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite.js)
+ 
     image 0x19/1:
     
     ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite0x191.jpg)

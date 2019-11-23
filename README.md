@@ -53,7 +53,7 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  
  1. What frame did you capture? 
  
-    [pins](https://makecode.microbit.org/reference/pins/i2c-write-number)
+    I used this command to perform the next three tasks. [pins.i2cWrite](https://makecode.microbit.org/reference/pins/i2c-write-number)
  
     The frame captured was the address frame. The data frame is missing. Since there is no acknowledge the microbit does not send data.     To prove there I wrote the same data to two adresses. In the pucture you can see the differences. I wrote to address 0x33               data 2056. [picture](https://drive.google.com/open?id=1MO4j2DVavOOopLI2WoWB74jDm51NRnnz) and address 0x1F data 2056 
     [picture](https://drive.google.com/open?id=1MX87x9fjfo8W_xH09E54W0coafCq9GV1)
@@ -64,7 +64,7 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     image 0x1F/2056:
     
-    [picture](https://drive.google.com/open?id=1MX87x9fjfo8W_xH09E54W0coafCq9GV1)
+    ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite0x1F2056.jpg)
     
     
     

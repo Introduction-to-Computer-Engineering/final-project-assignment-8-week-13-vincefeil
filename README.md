@@ -85,7 +85,8 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  ## Write a short program to read a number from the I2C devices on the microbit.
  
  1. Try all three addresses (Bonus for a cogent argument about why there are three).
-    There are three addresses because there are three different variations of the micribit that have three different on board device         variations that have three different addresses. 
+ 
+    for the accelerometer the first address (0x19) is the slaves address. The next is the read address (0x33) and the last is the write     address (0x32). The last two tell the slave which operation to perform Read or Write. 
     
     First address 0x0E [picture](https://drive.google.com/open?id=1M9PU8JH9z0kdQATXo6VoWUHaLp_WAQRv) shows the display of 0 and the         address frame with no data following it.
     

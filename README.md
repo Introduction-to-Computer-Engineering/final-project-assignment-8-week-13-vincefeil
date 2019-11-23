@@ -92,7 +92,7 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     image raed 0x0E:
     
-    [picture]()
+    ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cRead0x0E.jpg)
     
     Second address 0x1D [picture](https://drive.google.com/open?id=1M9PU8JH9z0kdQATXo6VoWUHaLp_WAQRv) similarly there is an address         frame with no data. Close inspection shows a slight difference in the address frame from the frame of 0x0E.
     

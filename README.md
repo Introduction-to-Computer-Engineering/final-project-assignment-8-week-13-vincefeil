@@ -17,6 +17,8 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
   [Video](https://drive.google.com/open?id=1K3JJoz3r66mBR8rAS8xY1Wm9DV71DDp8)
   
     file: [PWM.js](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/PWM.js)
+    
+    ![alt text](images/rigol-1104z-oscilloscope.jpg "Captured I2C frame")
   
   
 

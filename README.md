@@ -86,6 +86,8 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  
  1. Try all three addresses (Bonus for a cogent argument about why there are three).
  
+    I used this command to perform all read tasks. [pins.i2cRead](https://makecode.microbit.org/reference/pins/i2c-read-number)
+ 
     for the accelerometer the first address (0x19) is the slaves address. The next is the read address (0x33) and the last is the write     address (0x32). The last two tell the slave which operation to perform Read or Write. 
     
     First address 0x0E [picture](https://drive.google.com/open?id=1OolMzt1V4nY5k_4U_ISafdRlsphSBaD5) shows the display of 0 and the         address frame with no data following it.

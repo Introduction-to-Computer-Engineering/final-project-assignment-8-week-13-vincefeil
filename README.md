@@ -94,7 +94,9 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cRead0x0E.jpg)
     
-    Second address 0x1D [picture](https://drive.google.com/open?id=1M9PU8JH9z0kdQATXo6VoWUHaLp_WAQRv) similarly there is an address         frame with no data. Close inspection shows a slight difference in the address frame from the frame of 0x0E.
+    Second address 0x1D [picture](https://drive.google.com/open?id=1OREOn6xoAd49MGPnvXb3J7_Of0VDhs6H) similarly there is an address         frame with no data. Close inspection shows a slight difference in the address frame from the frame of 0x0E.
+    
+    ![alt text]()
     
     Third address 0x1E magnetometer. First video shows the microbit pointing South West 
     [video](https://drive.google.com/open?id=1OEdO2dAZcdWf63bwZICcT_USobOLy1Ax). Second video shows microbit pointing North West 

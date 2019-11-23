@@ -90,6 +90,10 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     First address 0x0E [picture](https://drive.google.com/open?id=1OolMzt1V4nY5k_4U_ISafdRlsphSBaD5) shows the display of 0 and the         address frame with no data following it.
     
+    image raed 0x0E:
+    
+    [picture]()
+    
     Second address 0x1D [picture](https://drive.google.com/open?id=1M9PU8JH9z0kdQATXo6VoWUHaLp_WAQRv) similarly there is an address         frame with no data. Close inspection shows a slight difference in the address frame from the frame of 0x0E.
     
     Third address 0x1E magnetometer. First video shows the microbit pointing South West 

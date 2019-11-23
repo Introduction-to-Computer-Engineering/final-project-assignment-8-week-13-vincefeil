@@ -76,6 +76,10 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite0x191.jpg)
     
+    image 0x19/2056:
+    
+    ![alt text](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite0x192056.jpg)
+    
  ## Write a short program to read a number from the I2C devices on the microbit.
  
  1. Try all three addresses (Bonus for a cogent argument about why there are three).

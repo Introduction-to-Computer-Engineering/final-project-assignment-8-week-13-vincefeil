@@ -26,7 +26,7 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
 
    UART devices are asynchronous and require that the two devices on the bus have the same clock rate. There is hardware overhead and      the complexity is more difficult to manage in software. You must also have a start and stop bit on each package meaning 10 bits for      each transmision. They are also most suited to busses with only two devices.
    
-   SPI devices require four pins for the first device on the bus and then a chip select pin for each additional device. many devices        mean many pins. SPI allaws only one master on the bus but, any number of slaves.
+   SPI devices require four pins for the first device on the bus and then a chip select pin for each additional device. Many devices        mean many pins. SPI allaws only one master on the bus but, any number of slaves.
    
    I2C devices can have more than one master and upto 1008 slaves. They only require two wires to connect masters and slaves and have      data rates between UART and SPI. Software is easy to impliment.
 
@@ -37,15 +37,15 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
   
 3. What distinguishes the master and the slaves?
 
-    The master device can call the slave devices using their addresses and its clock. With these two lines the master can write data to     or  read data from the slave devices but, the slave can not do the same to the master. they must recieve or give data to the master     only when the master calls them.
+    The master device can call the slave devices using their addresses and its clock. With these two lines the master can write data to     or  read data from the slave devices but, the slave can not do the same to the master. They must recieve or give data to the master     only when the master calls them.
     
  4. How are the two types of protocol frames different?
  
-    The address frame has a start condition that must be generated befor the rest of the information is transmited. The data frame has a     stop condition that signals the end of the transmition. Also the address frame and data frames are what they say. One is addressing     a slave device and data is the infomation passed between them.
+    The address frame has a start condition that must be generated before the rest of the information is transmited. The data frame has     a stop condition that signals the end of the transmition. Also the address frame and data frames are what they say. One is               addressing a slave device and data is the infomation passed between them.
  
  5. What is the most appropriate trigger for capturing an I2C frame on the oscilloscope?
  
-    It is best to trigger on the address frame. 
+    It is best to trigger on the address frame since the addressing starts before the clock. 
     
  # First steps with I2C
  
@@ -55,7 +55,7 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
  
     I used this command to perform the next three tasks. [pins.i2cWrite](https://makecode.microbit.org/reference/pins/i2c-write-number)
  
-    The frame captured was the address frame. The data frame is missing. Since there is no acknowledge the microbit does not send data.     To prove there I wrote the same data to two adresses. In the pucture you can see the differences. I wrote to address 0x33               data 2056. [picture](https://drive.google.com/open?id=1MO4j2DVavOOopLI2WoWB74jDm51NRnnz) and address 0x1F data 2056 
+    The frame captured was the address frame. The data frame is missing. Since there is no acknowledge the microbit does not send data.     To prove this I wrote the same data to two adresses. In the pucture you can see the differences. I wrote to address 0x33                 data 2056. [picture](https://drive.google.com/open?id=1MO4j2DVavOOopLI2WoWB74jDm51NRnnz) and address 0x1F data 2056 
     [picture](https://drive.google.com/open?id=1MX87x9fjfo8W_xH09E54W0coafCq9GV1)
     
     image 0x33/2056:
@@ -68,9 +68,10 @@ This assignment [README](README.md) is _intentionally_ blank. It is part of the 
     
     
     
- 2. What does the write function do if there is nothing connected? It sends out the address and waits for an acknowledge. With nothing       attached it gets no acknowledge and does not send data.
+ 2. What does the write function do if there is nothing connected? 
+    It sends out the address and waits for an acknowledge. With nothing attached it gets no acknowledge and does not send data.
  
- 3. Is there a difference in what you capture if you write to an internal address? Yes, the microbit gets an acknowledge when it writes     to an internal address and then sends data. You can clearly see the address and data frames in the pictures. To prove this I first       did a write to address 0x19 with data 1 [picture](https://drive.google.com/open?id=1N7hwyeswLbazN_a0vw7XtoMJg4U0DY1G) and then to       address 0x19 data 2056 [picture](https://drive.google.com/open?id=1Miwu5Cjre_zt5eFwpb7wNkC4e4HAYzo3). You can see a difference in       the data frame between the two pictures. In this video i was able to capture the address and data changing while writing two             different ones in the same program. [video](https://drive.google.com/open?id=1P7KaY7ZxxqpQao7aZr4rb67UnLp4D58z)
+ 3. Is there a difference in what you capture if you write to an internal address? Yes, the microbit gets an acknowledge when it writes     to an internal address and then sends data. You can clearly see the address and data frames in the pictures. To prove this I first       did a write to address 0x19 with data 1 [picture](https://drive.google.com/open?id=1N7hwyeswLbazN_a0vw7XtoMJg4U0DY1G) and then to       address 0x19 data 2056 [picture](https://drive.google.com/open?id=1Miwu5Cjre_zt5eFwpb7wNkC4e4HAYzo3). You can see a difference in       the data frame between the two pictures. In this video I was able to capture the address and data changing while writing two             different ones in the same program. [video](https://drive.google.com/open?id=1P7KaY7ZxxqpQao7aZr4rb67UnLp4D58z)
  
     file: [i2cWrite.js](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-8-week-13-vincefeil/blob/master/i2cWrite.js)
  
